@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 8%;
+  background: white;
+}
+
+.navbar a {
+  color: #1e293b;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hero {
+  min-height: 420px;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 12px 0;
+}
+
+button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e0e7ff;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #e2e8f0;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+}
